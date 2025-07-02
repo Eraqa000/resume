@@ -75,27 +75,6 @@
       </ul>
     </section>
   </main>
-  <script>
-  const menuBtn = document.querySelector(".menu-btn");
-  function isMobile() {
-    return window.innerWidth <= 700;
-  }
-  if (!isMobile()) {
-    menuBtn.addEventListener("click", (e) => {
-      document.body.classList.toggle("collapsed");
-      e.currentTarget.classList.toggle("fa-chevron-right");
-      e.currentTarget.classList.toggle("fa-chevron-left");
-    });
-  } else {
-    // На мобильных всегда свернутое меню
-    document.body.classList.add("collapsed");
-  }
-  // Если пользователь меняет размер окна
-  window.addEventListener('resize', () => {
-    if (isMobile()) {
-      document.body.classList.add("collapsed");
-    }
-  });
-</script>
+  <script src="main.js"></script>
 </body>
 </html>
