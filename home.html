@@ -1,0 +1,87 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+  </head>
+<body class="collapsed">
+  <aside>
+    <button class="menu-btn fa fa-chevron-left" aria-label="Открыть/закрыть меню"></button>
+    <a href="#" class="logo-wrapper">
+      <span class="fa fa-user"></span>
+      <span class="brand-name">Ernar Sarsenbay</span>
+    </a>
+    <div class="separator"></div>
+    <ul class="menu-items">
+      <li><a href="#about"><span class="icon fa fa-user"></span><span class="item-name">Обо мне</span></a><span class="tooltip">Обо мне</span></li>
+      <li><a href="#skills"><span class="icon fa fa-code"></span><span class="item-name">Навыки</span></a><span class="tooltip">Навыки</span></li>
+      <li><a href="#experience"><span class="icon fa fa-briefcase"></span><span class="item-name">Опыт</span></a><span class="tooltip">Опыт</span></li>
+      <li><a href="#education"><span class="icon fa fa-graduation-cap"></span><span class="item-name">Образование</span></a><span class="tooltip">Образование</span></li>
+      <li><a href="#languages"><span class="icon fa fa-language"></span><span class="item-name">Языки</span></a><span class="tooltip">Языки</span></li>
+      <li><a href="#contacts"><span class="icon fa fa-envelope"></span><span class="item-name">Контакты</span></a><span class="tooltip">Контакты</span></li>
+      <li><a href="#goals"><span class="icon fa fa-bullseye"></span><span class="item-name">Цели</span></a><span class="tooltip">Цели</span></li>
+    </ul>
+  </aside>
+  <main>
+    <h1><span class="fa fa-user-astronaut icon"></span> Ernar Sarsenbay</h1>
+    <h2>Full-stack Developer</h2>
+    <section id="about">
+      <h3><span class="fa fa-user icon"></span> Обо мне</h3>
+      <p>Я — начинающий фронтенд-разработчик и аналитик данных. Увлекаюсь созданием современных, быстрых и визуально привлекательных сайтов, а также люблю анализировать данные и искать в них полезные инсайты. Стремлюсь к постоянному росту, открыт к новым знаниям и вызовам.</p>
+    </section>
+    <section id="skills">
+      <h3><span class="fa fa-tools icon"></span> Технологии</h3>
+      <ul>
+        <li><b>Frontend:</b> React, JavaScript, HTML5, CSS3, Tailwind CSS, Figma (UI-дизайн), Vite, Git, GitHub</li>
+        <li><b>Анализ данных:</b> Python (pandas, matplotlib), SQL (MySQL), Excel, Google Sheets</li>
+      </ul>
+    </section>
+    <section id="experience">
+      <h3><span class="fa fa-briefcase icon"></span> Опыт</h3>
+      <ul>
+        <li>Создал 2–3 сайта и Telegram-бота</li>
+        <li>Лендинг для медицинской клиники по пересадке волос</li>
+        <li>Проектирование Telegram-бота для барбершопа с функцией записи</li>
+        <li>Работа в отделе продаж и детейлинг-центре (установка линз на фары)</li>
+      </ul>
+    </section>
+    <section id="education">
+      <h3><span class="fa fa-graduation-cap icon"></span> Образование</h3>
+      <p>Студент 3 курса факультета информационных технологий, КазНУ им. аль-Фараби</p>
+    </section>
+    <section id="languages">
+      <h3><span class="fa fa-language icon"></span> Языки</h3>
+      <ul>
+        <li>Казахский — родной</li>
+        <li>Русский — свободно</li>
+        <li>Английский — pre-intermediate</li>
+      </ul>
+    </section>
+    <section id="contacts">
+      <h3><span class="fa fa-envelope icon"></span> Контакты</h3>
+      <ul>
+        <li><span class="fa fa-envelope"></span> Email: example@gmail.com</li>
+        <li><span class="fa fa-github"></span> GitHub: <a href="https://github.com/Eraqa000" target="_blank">github.com/Eraqa000</a></li>
+        <li><span class="fa fa-linkedin"></span> LinkedIn: (укажете позже)</li>
+        <li><span class="fa fa-map-marker-alt"></span> Город: Алматы, Казахстан</li>
+      </ul>
+    </section>
+    <section id="goals">
+      <h3><span class="fa fa-bullseye icon"></span> Цели</h3>
+      <ul>
+        <li>Найти стажировку или первую работу в сфере frontend или аналитики</li>
+        <li>Развить сильное портфолио и выйти на фриланс-проекты</li>
+        <li>В будущем — создать платформу для специалистов с возможностью загрузки курсов и видео</li>
+      </ul>
+    </section>
+  </main>
+  <script>
+    const menuBtn = document.querySelector(".menu-btn");
+    menuBtn.addEventListener("click", (e) => {
+      document.body.classList.toggle("collapsed");
+      e.currentTarget.classList.toggle("fa-chevron-right");
+      e.currentTarget.classList.toggle("fa-chevron-left");
+    })
+  </script>
+</body>
+</html>
