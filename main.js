@@ -11,13 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
       if (menuBtn) menuBtn.style.display = "none";
     } else {
       if (menuBtn) menuBtn.style.display = "";
-      // При возврате на десктоп меню всегда открыто
-      document.body.classList.remove("collapsed");
-      // Сбросить иконку кнопки в исходное состояние
-      if (menuBtn) {
-        menuBtn.classList.remove("fa-chevron-right");
-        menuBtn.classList.add("fa-chevron-left");
-      }
     }
   }
 
